@@ -18,7 +18,7 @@ export default {
       type: [String, Boolean],
       default: false,
       validator: function (value) {
-        return !str.startsWith(".")
+        return !value.startsWith(".")
       }
     },
     distance: {
