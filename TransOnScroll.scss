@@ -1,0 +1,147 @@
+$module: 'transition-on-scroll';
+
+.#{$module} {
+  display: inline-block;
+  &__off {
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    opacity: 1;
+  }
+}
+//long
+.#{$module}--top-long {
+  &__off {
+    transform: translateY(-80%);
+    @extend .#{$module}__off
+  }
+  &__on {
+    transform: translateY(0);
+    @extend .#{$module}__on
+  }
+}
+.#{$module}--bottom-long {
+  &__off {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.#{$module}--left-long {
+  &__off {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.#{$module}--right-long {
+  &__off {
+    transform: translateX(80%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+//normal
+.#{$module}--top-normal {
+  &__off {
+    transform: translateY(-50%);
+    @extend .#{$module}__off
+  }
+  &__on {
+    transform: translateY(0);
+    @extend .#{$module}__on
+  }
+}
+.#{$module}--bottom-normal {
+  &__off {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.#{$module}--left-normal {
+  &__off {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.#{$module}--right-normal {
+  &__off {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+//short
+.#{$module}--top-short {
+  &__off {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.#{$module}--bottom-short {
+  &__off {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.#{$module}--left-short {
+  &__off {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.#{$module}--right-short {
+  &__off {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  &__on {
+    transition: 1.7s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
