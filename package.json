@@ -1,6 +1,6 @@
 {
   "name": "vue-transition-on-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It is Vue.js plugin. When you scroll, you can give the transition effect to the internal objects",
   "main": "index.js",
   "scripts": {

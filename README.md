@@ -3,7 +3,13 @@
 > It is Vue.js plugin. When you scroll, you can give the transition effect to the internal objects.
 when the target object show up in viewport of wrapper(or window), transition effect start.
 
-### Example
+## Install
+```
+npm install vue-transition-on-scroll
+yarn add vue-transition-on-scroll
+```
+
+## Example
 
 ```html
 <template>
@@ -61,11 +67,11 @@ when the target object show up in viewport of wrapper(or window), transition eff
 }
 ```
 
-#### Props
+## Props
 
 | Property  | Description               | Type     | Accepted Values       | Default |
 |-----------|---------------------------|----------|-----------------------|---------|
 | from      | transition direction from | String   | top/right/left/bottom | top     |
 | wrapper   | wrapper is scrollable box what box wrapped targets | String | only id | window     |
-| distance  | distance of trasition     | String | long/normal/short | 50%     |
-| repeat    | whether repeat transiton effect | String | long/normal/short | 50%     |
+| distance  | distance of trasition     | String | long/normal/short | normal     |
+| repeat    | whether repeat transiton effect | Boolean | - | false     |
