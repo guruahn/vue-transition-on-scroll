@@ -19,13 +19,13 @@ yarn add vue-transition-on-scroll
         scroll down
       </div>
       <div id="scroll1">
-        <trans-on-scroll wrapper=".scroll-transition" repeat>from default(top)</trans-on-scroll>
+        <trans-on-scroll wrapper="scroll-transition" repeat>from default(top)</trans-on-scroll>
       </div>
       <div id="scroll2">
-        <trans-on-scroll wrapper=".scroll-transition" repeat from="right">from right</trans-on-scroll>
+        <trans-on-scroll wrapper="scroll-transition" repeat from="right">from right</trans-on-scroll>
       </div>
       <div id="scroll3">
-        <trans-on-scroll wrapper=".scroll-transition" repeat from="left">from left</trans-on-scroll>
+        <trans-on-scroll wrapper="scroll-transition" repeat from="left">from left</trans-on-scroll>
       </div>
     </div>
   </div>
@@ -72,6 +72,6 @@ yarn add vue-transition-on-scroll
 | Property  | Description               | Type     | Accepted Values       | Default |
 |-----------|---------------------------|----------|-----------------------|---------|
 | from      | transition direction from | String   | top/right/left/bottom | top     |
-| wrapper   | wrapper is scrollable box what box wrapped targets | String | only id | window     |
+| wrapper   | it is scrollable box that is wrapping objects | String | only class name | window |
 | distance  | distance of trasition     | String | long/normal/short | normal     |
 | repeat    | whether repeat transiton effect | Boolean | - | false     |

@@ -16,7 +16,10 @@ export default {
     },
     wrapper: {
       type: [String, Boolean],
-      default: false
+      default: false,
+      validator: function (value) {
+        return !str.startsWith(".")
+      }
     },
     distance: {
       type: String,
@@ -79,7 +82,7 @@ export default {
         if(!that.wrapper){
           that.wrapperObj = window
         }else{
-          that.wrapperObj = document.querySelector(that.wrapper)
+          that.wrapperObj = document.querySelector('.'+that.wrapper)
         }
         that.wrapperObj.addEventListener('scroll', function () {
           if (that.isInViewport(that.target, that.wrapperObj)) {
